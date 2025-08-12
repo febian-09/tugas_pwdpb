@@ -1,0 +1,81 @@
+<html>
+<head>
+    <title>Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 8px;
+            margin: 0px;
+            background-color: #fff;
+            height: 800vh;
+        }
+    </style>
+</head>
+<style>
+    h2 {
+        color:red
+    }
+    p.ex1 {
+        color:blue
+    }
+    p.ex2 {
+        color:yellow
+    }
+    p.ex3 {
+        color:green
+    }
+    fieldset {
+        border: 2px solid orange;
+    }
+</style>
+<body>
+    <h2>
+        <marquee direction="right" behavior="alternate" width="100%">Demo Membuat control Text</marquee>
+    <form>
+        <fieldset>
+            <legend>Data Fomulir</legend>
+        <p class="ex1"> Nama:</p>
+        <input type="text" name="textNama" size="30" />
+        <br />
+        <p class="ex2"> Alamat:</p>
+        <input type="text" name="textalamat" size="50" />
+        <br />
+        <p class="ex3"> No telepon:</p>
+        <input type="text" name="texttelepon" size="20" />
+        <br />
+        <p>Hobi:</p>
+        <input type="checkbox" name="hobi" value="Membaca" /> Membaca
+        <input type="checkbox" name="hobi" value="Olahraga" />Olahraga
+        <input type="checkbox" name="hobi" value="Musik" />Musik
+        <br />
+        <p>password</p>
+        <input type="password" name="password">
+        <input type="hidden" name="password"eger>
+        <br />
+        <p>Jurusan:</p>
+        <select name="jenis_kelamin">
+            <option value="PPLG">PPLG</option>
+            <option value="TKJ">TKJ</option>
+             <option value="AKL">AKL</option>
+        </select>
+        <br />
+        <p>Keterangan:</p>
+        <textarea name="keterangan" rows="4" cols="40"></textarea>
+        <br />
+        <p>Foto:</p>
+        <input type="file" name="foto" accept="image/*" />
+        <br />
+        <p>Video:</p>
+        <input type="file" name="video" accept="video/*" />
+        <br />
+        <p>Email:</p>
+        <input type="email" name="email" size="30" />
+        <br />
+        <p>
+            <input type="submit" value="submit" />
+            <input type="reset" value="reset" />
+            <button type="button">Select</button>
+        </p>
+        </fieldset>
+    </form>
+</body>
